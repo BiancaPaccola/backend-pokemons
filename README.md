@@ -33,4 +33,4 @@ Após terminar o desafio, você pode solicitar um pull request para a branch mas
 
 Só! Mas se quiser fazer a diferença, tente implementar um pouco de TDD e utilizar docker para execução do projeto.
 
-Boa sorte! :)
+Boa sorte!
