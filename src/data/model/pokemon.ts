@@ -1,0 +1,37 @@
+export interface PokemonDTO {
+            id: number,
+            name: string,
+            pokedexNumber: number,
+            imgName: string,
+            generation: number,
+            evolutionStage: string,
+            evolved: BOOL,
+            familyId: number,
+            crossGen: BOOL,
+            type1: string,
+            type2: string,
+            weather1: string,
+            weather2: string,
+            statTotal: number,
+            atk: number,
+            def: number,
+            sta: number,
+            legendary: number,
+            aquireable: number,
+            spawns: BOOL,
+            regional: BOOL,
+            raidable: number,
+            hatchable: number,
+            shiny: BOOL,
+            nest: BOOL,
+            new: BOOL,
+            notGettable: BOOL,
+            futureEvolve: BOOL,
+            cp40: number,
+            cp39: number,
+}
+
+enum BOOL {
+    FALSE = 0,
+    TRUE = 1
+}
