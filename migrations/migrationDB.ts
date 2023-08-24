@@ -5,10 +5,11 @@ export class MigrationDB extends BaseDatabase  {
 public createTable() {
         BaseDatabase.connection.raw(`
             CREATE TABLE IF NOT EXISTS pokemons_go(
-                id VARCHAR(255) PRIMARY KEY,
-                name VARCHAR(255) NOT NULL,
-                email VARCHAR(255) UNIQUE NOT NULL,
-                password VARCHAR(255) NOT NULL
+                id smallint PRIMARY KEY,
+                name VARCHAR(50) NOT NULL,
+                pokedexNumber smallint NOT NULL,
+                imgName VARCHAR(50) NOT NULL,
+                generation smallint 
             );
         `)
         .then(() => {
